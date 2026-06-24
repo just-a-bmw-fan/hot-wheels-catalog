@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Brand CSS Custom Properties ──────────────────────────── */
+:root {
+  --color-canvas:             #000000;
+  --color-surface-card:       #111111;
+  --color-surface-elevated:   #1A1A1A;
+  --color-surface-soft:       #222222;
+  --color-carbon:             #0A0A0A;
+  --color-text-primary:       #FFFFFF;
+  --color-text-body:          #E5E5E5;
+  --color-text-strong:        #FFFFFF;
+  --color-text-muted:         #888888;
+  --color-hairline:           #2A2A2A;
+  --color-hw-orange:          #FF6B00;
+  --color-hw-red:             #E2001A;
+  --tracking-machined:        1.5px;
+  --tracking-wide:            0.5px;
+  --spacing-section:          96px;
+  --spacing-xxl:              64px;
+}
+
+/* ── Base ──────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ── Reduced Motion ────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
