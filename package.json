@@ -16,7 +16,7 @@
     "@supabase/supabase-js": "^2.48.1",
     "framer-motion": "^12.15.0",
     "gsap": "^3.12.7",
-    "next": "15.3.4",
+    "next": "^16.2.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.172.0"
